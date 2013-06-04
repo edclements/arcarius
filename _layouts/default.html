@@ -66,20 +66,20 @@
       <div class="navbar">
         <div class="navbar-inner">
           <ul class="nav">
-            <li {% if page.url == '/index.html' %}class="active"{% endif %}>
-              <a href="/">Home</a>
+            <li {% if page.url == '{{ site.baseurl }}/index.html' %}class="active"{% endif %}>
+              <a href="{{ site.baseurl }}/">Home</a>
             </li>
-            <li {% if page.url == '/itinery/index.html' %}class="active"{% endif %}>
-              <a href="/itinery">The Trip</a>
+            <li {% if page.url == '{{ site.baseurl }}/itinery/index.html' %}class="active"{% endif %}>
+              <a href="{{ site.baseurl }}/itinery">The Trip</a>
             </li>
-            <li {% if page.url == '/coryphaena/index.html' %}class="active"{% endif %}>
-              <a href="/coryphaena">Coryphaena</a>
+            <li {% if page.url == '{{ site.baseurl }}/coryphaena/index.html' %}class="active"{% endif %}>
+              <a href="{{ site.baseurl }}/coryphaena">Coryphaena</a>
             </li>
-            <li {% if page.url == '/contact/index.html' %}class="active"{% endif %}>
-              <a href="/contact">Contact</a>
+            <li {% if page.url == '{{ site.baseurl }}/contact/index.html' %}class="active"{% endif %}>
+              <a href="{{ site.baseurl }}/contact">Contact</a>
             </li>
-            <li {% if page.url == '/links/index.html' %}class="active"{% endif %}>
-              <a href="/links">Links</a>
+            <li {% if page.url == '{{ site.baseurl }}/links/index.html' %}class="active"{% endif %}>
+              <a href="{{ site.baseurl }}/links">Links</a>
             </li>
           </ul>
         </div>
