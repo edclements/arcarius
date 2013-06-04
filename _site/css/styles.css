@@ -1,0 +1,49 @@
+body {
+  font: 16px/1.5 verdana, helvetica-neue, helvetica, arial, san-serif;
+  padding: 0;
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+#main {
+  width: 960px;
+  margin: 0 auto;
+}
+header {
+  padding: 0 10px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 50px;
+}
+.content {
+  padding: 10px;
+}
+footer {
+  font-size: 0.65em;
+  text-align: center;
+}
+iframe {
+  border: none;
+  width: 100%;
+  height: 800px;
+}
+.ss-form {
+  margin-top: 10px;
+}
+.ss-required-asterisk {
+  color: darkred;
+}
+#posts li {
+  list-style-type: none;
+}
