@@ -16,6 +16,9 @@
       margin: 0;
       padding: 0;
     }
+    li {
+      list-style: none;
+    }
     a {
       text-decoration: none;
     }
@@ -78,7 +81,10 @@
       <div class="navbar-inner">
         <ul class="nav nav-pills">
           <li {% if page.url == '/index.html' %}class="active"{% endif %}>
-            <a href="{{ site.baseurl }}/">Home</a>
+            <a href="{{ site.baseurl }}/">Logbook</a>
+          </li>
+          <li {% if page.url == '/crew/index.html' %}class="active"{% endif %}>
+            <a href="{{ site.baseurl }}/crew">The Crew</a>
           </li>
           <li {% if page.url == '/itinery/index.html' %}class="active"{% endif %}>
             <a href="{{ site.baseurl }}/itinery">The Trip</a>
