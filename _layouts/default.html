@@ -27,13 +27,16 @@
       margin: 0 auto;
     }
     header {
-      padding: 0 10px;
+      padding: 140px 0 10px 0;
       overflow: hidden;
-      margin-top: 20px;
+      color: white;
+      background-color: skyblue;
     }
     h1 {
       font-family: 'Libre Baskerville', serif;
       font-size: 50px;
+      width: 960px;
+      margin: 0 auto;
     }
     .content {
       padding: 10px;
@@ -56,36 +59,42 @@
     #posts li {
       list-style-type: none;
     }
+    img {
+      width: 150px;
+      position: absolute;
+      top: 20px;
+      right: 80px;
+    }
   </style>
 </head>
 <body>
-  <div id="main">
-    <header>
-      <h1>Arcarius</h1>
-      <nav role="navigation">
-      <div class="navbar">
-        <div class="navbar-inner">
-          <ul class="nav">
-            <li {% if page.url == '{{ site.baseurl }}/index.html' %}class="active"{% endif %}>
-              <a href="{{ site.baseurl }}/">Home</a>
-            </li>
-            <li {% if page.url == '{{ site.baseurl }}/itinery/index.html' %}class="active"{% endif %}>
-              <a href="{{ site.baseurl }}/itinery">The Trip</a>
-            </li>
-            <li {% if page.url == '{{ site.baseurl }}/coryphaena/index.html' %}class="active"{% endif %}>
-              <a href="{{ site.baseurl }}/coryphaena">Coryphaena</a>
-            </li>
-            <li {% if page.url == '{{ site.baseurl }}/comments/index.html' %}class="active"{% endif %}>
-              <a href="{{ site.baseurl }}/comments">Comments</a>
-            </li>
-            <li {% if page.url == '{{ site.baseurl }}/links/index.html' %}class="active"{% endif %}>
-              <a href="{{ site.baseurl }}/links">Links</a>
-            </li>
-          </ul>
-        </div>
+  <header>
+    <h1>Arcarius</h1>
+  </header>
+  <div id="main" class="container">
+    <nav role="navigation">
+    <div class="navbar navbar-fixed">
+      <div class="navbar-inner">
+        <ul class="nav nav-pills">
+          <li {% if page.url == '/index.html' %}class="active"{% endif %}>
+            <a href="{{ site.baseurl }}/">Home</a>
+          </li>
+          <li {% if page.url == '/itinery/index.html' %}class="active"{% endif %}>
+            <a href="{{ site.baseurl }}/itinery">The Trip</a>
+          </li>
+          <li {% if page.url == '/coryphaena/index.html' %}class="active"{% endif %}>
+            <a href="{{ site.baseurl }}/coryphaena">Coryphaena</a>
+          </li>
+          <li {% if page.url == '/comments/index.html' %}class="active"{% endif %}>
+            <a href="{{ site.baseurl }}/comments">Comments</a>
+          </li>
+          <li {% if page.url == '/links/index.html' %}class="active"{% endif %}>
+            <a href="{{ site.baseurl }}/links">Links</a>
+          </li>
+        </ul>
       </div>
-      </nav>
-    </header>
+    </div>
+    </nav>
     <br>
     {{ content }}
     <footer>
