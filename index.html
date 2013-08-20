@@ -4,8 +4,8 @@ layout: default
 <ul id="posts">
 {% for post in site.posts %}
   <li>
-    <h3>{{ post.date | date: "%x") }}</h3>
-    <p>{{ post.content }}</p>
+    <h3>{{ post.date | pretty }}</h3>
+    {{ post.content }}
   </li>
 {% endfor %}
 </ul>

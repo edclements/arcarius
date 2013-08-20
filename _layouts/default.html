@@ -3,38 +3,106 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <title> {% if page.title %} {{ page.title }} | {% endif %} Arcarius </title>
-  <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
-  <link rel="stylesheet" href="/css/styles.css" />
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <style>
+    body {
+      font: 16px/1.5 'Open Sans', verdana, helvetica-neue, helvetica, arial, san-serif;
+      padding: 0;
+      margin: 0;
+    }
+    p {
+      margin: 10px 0 20px 0;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    #main {
+      width: 960px;
+      margin: 0 auto;
+    }
+    header {
+      padding: 140px 0 10px 0;
+      overflow: hidden;
+      color: white;
+      background-color: skyblue;
+    }
+    footer {
+      height: 400px;
+    }
+    h1 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 60px;
+      width: 960px;
+      margin: 0 auto;
+    }
+    h3 {
+      margin-top: 20px;
+    }
+    .content {
+      padding: 10px;
+    }
+    footer {
+      font-size: 0.65em;
+      text-align: center;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 800px;
+    }
+    .ss-form {
+      margin-top: 10px;
+    }
+    .ss-required-asterisk {
+      color: darkred;
+    }
+    #posts li {
+      list-style-type: none;
+      clear: both;
+    }
+  </style>
 </head>
 <body>
-  <div id="main">
-    <header>
-      <h1>Arcarius</h1>
-      <nav role="navigation">
-      <div class="navbar">
-        <div class="navbar-inner">
-          <ul class="nav">
-            <li {% if page.url == '/index.html' %}class="active"{% endif %}>
-              <a href="/">Home</a>
-            </li>
-            <li {% if page.url == '/itinery/index.html' %}class="active"{% endif %}>
-              <a href="/itinery">The Trip</a>
-            </li>
-            <li {% if page.url == '/coryphaena/index.html' %}class="active"{% endif %}>
-              <a href="/coryphaena">Coryphaena</a>
-            </li>
-            <li {% if page.url == '/contact/index.html' %}class="active"{% endif %}>
-              <a href="/contact">Contact</a>
-            </li>
-            <li {% if page.url == '/links/index.html' %}class="active"{% endif %}>
-              <a href="/links">Links</a>
-            </li>
-          </ul>
-        </div>
+  <header>
+    <h1>Arcarius</h1>
+  </header>
+  <div id="main" class="container">
+    <nav role="navigation">
+    <div class="navbar navbar-fixed">
+      <div class="navbar-inner">
+        <ul class="nav nav-pills">
+          <li {% if page.url == '/index.html' %}class="active"{% endif %}>
+            <a href="{{ site.baseurl }}/">Logbook</a>
+          </li>
+          <li {% if page.url == '/crew/index.html' %}class="active"{% endif %}>
+            <a href="{{ site.baseurl }}/crew">The Crew</a>
+          </li>
+          <li {% if page.url == '/itinery/index.html' %}class="active"{% endif %}>
+            <a href="{{ site.baseurl }}/itinery">The Trip</a>
+          </li>
+          <li {% if page.url == '/comments/index.html' %}class="active"{% endif %}>
+            <a href="{{ site.baseurl }}/comments">Comments</a>
+          </li>
+          <li {% if page.url == '/links/index.html' %}class="active"{% endif %}>
+            <a href="{{ site.baseurl }}/links">Links</a>
+          </li>
+        </ul>
       </div>
-      </nav>
-    </header>
+    </div>
+    </nav>
     <br>
     {{ content }}
     <footer>
