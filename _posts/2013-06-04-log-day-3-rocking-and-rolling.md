@@ -1,3 +1,6 @@
+---
+title: 4th June 2013
+---
 Hi All,
 
 Another great day sailing if a bit rolley! Bit of cloud around today and the NE wind still has a bite to it.
