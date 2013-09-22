@@ -95,7 +95,7 @@ Marian flies back 18th January – Boo Hoo !!
 
 Sail boat to Antigua Via Matinique,,Dominica ,Guadeloupe, cre TBC 
 
-18th Feb Antigua Megan (neice) & Matt crew to help take boat to British Virgen Islands via Barbuda ,St Kitts ,Nevis,Saint Martin , Anguilla
+18th Feb Antigua Megan (niece) & Matt crew to help take boat to British Virgen Islands via Barbuda ,St Kitts ,Nevis,Saint Martin , Anguilla
 
 1st April Arrive  British Virgin Islands
 
