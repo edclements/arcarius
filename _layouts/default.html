@@ -7,84 +7,12 @@
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <style>
-    body {
-      font: 16px/1.5 'Open Sans', verdana, helvetica-neue, helvetica, arial, san-serif;
-      padding: 0;
-      margin: 0;
-    }
-    p {
-      margin: 10px 0 20px 0;
-    }
-    ul {
-      margin: 0;
-      padding: 0;
-    }
-    li {
-      list-style: none;
-    }
-    a {
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    #main {
-      width: 960px;
-      margin: 0 auto;
-    }
-    header {
-      padding: 140px 0 10px 0;
-      overflow: hidden;
-      color: white;
-      background-color: skyblue;
-    }
-    footer {
-      height: 400px;
-    }
-    h1 {
-      font-family: 'Libre Baskerville', serif;
-      font-size: 60px;
-      width: 960px;
-      margin: 0 auto;
-    }
-    h3 {
-      margin-top: 20px;
-    }
-    .content {
-      padding: 10px;
-    }
-    footer {
-      font-size: 0.65em;
-      text-align: center;
-    }
-    iframe {
-      border: none;
-      width: 100%;
-      height: 800px;
-    }
-    .ss-form {
-      margin-top: 10px;
-    }
-    .ss-required-asterisk {
-      color: darkred;
-    }
-    #posts li {
-      list-style-type: none;
-      clear: both;
-    }
-    .medium-img {
-      margin: 0 auto 10px auto;
-      display: block;
-    }
-    img {
-      max-width: none;
-    }
-  </style>
+  <link href='{{ site.baseurl }}/css/main.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <header>
     <h1>Arcarius</h1>
+    <object type="image/svg+xml" data="{{ site.baseurl }}/img/Compass-Rose.svg"></object>
   </header>
   <div id="main" class="container">
     <nav role="navigation">
@@ -110,7 +38,6 @@
       </div>
     </div>
     </nav>
-    <br>
     {{ content }}
     <footer>
     </footer>
