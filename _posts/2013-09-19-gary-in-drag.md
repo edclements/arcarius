@@ -5,7 +5,7 @@ title: 19th September 2013
 
 A long day sail on Thursday 19th took us to the Portuguese fort town of Al
 Jadidah. No marina here so it was coming alongside in a fishing port teeming
-with activity 24 hors a day.
+with activity 24 hours a day.
 
 <img class="medium-img" src="/img/gary_in_drag.jpg" />
 
