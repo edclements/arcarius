@@ -76,7 +76,8 @@ img {
 #posts li,
 #crew_list li,
 #the_trip li,
-#links li {
+#links li,
+#stats li {
   list-style-type: none;
   clear: both;
   border: 1px solid #d4d4d4;
