@@ -1,5 +1,5 @@
 
-var myLatlng = new google.maps.LatLng(18.60, -37.38);
+var myLatlng = new google.maps.LatLng(14.04, -59.93);
 function initialize() {
   var mapOptions = {
     scrollwheel: false,
@@ -87,7 +87,16 @@ function initialize() {
     new google.maps.LatLng(19.36, -33.78),
     new google.maps.LatLng(19.36, -33.78),
     new google.maps.LatLng(19.13, -35.40),
-    new google.maps.LatLng(18.60, -37.38)
+    new google.maps.LatLng(18.60, -37.38),
+    new google.maps.LatLng(18.05, -39.36),
+    new google.maps.LatLng(17.47, -41.42),
+    new google.maps.LatLng(17.12, -43.55),
+    new google.maps.LatLng(16.77, -46.08),
+    new google.maps.LatLng(16.73, -48.65),
+    new google.maps.LatLng(16.25, -51.47),
+    new google.maps.LatLng(15.73, -54.22),
+    new google.maps.LatLng(15.01, -57.07),
+    new google.maps.LatLng(14.04, -59.93)
   ];
   var path = new google.maps.Polyline({
     path: coordinates,
