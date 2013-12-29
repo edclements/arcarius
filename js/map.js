@@ -1,5 +1,5 @@
 
-var myLatlng = new google.maps.LatLng(14.04, -59.93);
+var myLatlng = new google.maps.LatLng(14.09, -60.97);
 function initialize() {
   var mapOptions = {
     scrollwheel: false,
@@ -96,7 +96,8 @@ function initialize() {
     new google.maps.LatLng(16.25, -51.47),
     new google.maps.LatLng(15.73, -54.22),
     new google.maps.LatLng(15.01, -57.07),
-    new google.maps.LatLng(14.04, -59.93)
+    new google.maps.LatLng(14.04, -59.93),
+    new google.maps.LatLng(14.09, -60.97)
   ];
   var path = new google.maps.Polyline({
     path: coordinates,
