@@ -1,2 +1,2 @@
 #!/bin/sh
-jekyll serve --baseurl '' --watch
+bundle exec jekyll serve --baseurl '' --watch
